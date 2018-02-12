@@ -5,11 +5,15 @@ class ToDoInput extends Component {
         super(props);
         this.state = {inputValue: 'sometext'};
         this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleChange(e){
         this.setState({
             inputValue: e.target.value
         });
+    }
+    handleSubmit(){
+        this.props.addThingToDo(this.state.inputValue);
     }
 
     render() {
@@ -20,7 +24,11 @@ class ToDoInput extends Component {
                     value={this.state.inputValue}
                     onChange={this.handleChange}
                 />
-                <button>Add</button>
+                <button 
+                    onClick={this.handleSubmit}
+                >
+                Add
+                </button>
             </div>
         )
     }

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body {
+    background: #16A085;
+    background: -webkit-linear-gradient(to right, #F4D03F, #16A085);
+    background: linear-gradient(to right, #F4D03F, #16A085);
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    padding-top: 5%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header h1 span {
+    text-decoration: line-through;
+    color: #009933;
+}
+
+header h2 {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form {
+    width: 60%;
+    margin: 5% auto 2%;
+}
+
+#todoInput {
+    width: 100%;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    font: 300 2.5rem 'Abel', sans-serif;
+    padding: 10px;
+    color: #EEE;
+}
+
+.list {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.task {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: #FDF7E7;
+    transition: all .3s ease;
+}
+
+.task:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 93%;
+}
+
+.task:hover span {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #009933;
+}
+
+li span {
+    float: right;
+    padding-right: 10px;
+    color: #E3170A;
+    transition: all .3s;
+    opacity: 0;
+}
+
+li span:hover {
+    color: #BD0000;
+}
+
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #FFFCF7;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #FFFCF7;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FFFCF7;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #FFFCF7;
+}

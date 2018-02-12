@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ToDoItem from './ToDoItem';
+import ToDoInput from './ToDoInput';
 
 const API_URL = '/api/todos';
 
@@ -48,6 +49,7 @@ loadThingsToDo(){
                     <h1 className="title"><span>things</span> TO-DO</h1>
                     <h2 className="subtitle">An useful app for remember any task to do.</h2>
                 </header>
+                <ToDoInput/>
                 <ul>
                   {thingsToDo}
                 </ul>

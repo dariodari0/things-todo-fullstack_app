@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 
 class ToDoInput extends Component {
-    render(){
+    render() {
         return (
-            <h2>hello</h2>
+            <div>
+                <input type="text"/>
+                <button>Add</button>
+            </div>
         )
     }
 }

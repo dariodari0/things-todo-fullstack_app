@@ -1,11 +1,9 @@
 import React from 'react';
 
 const ToDoItem = ({name, completed, onDelete, onToggle}) => (
-    <li> 
+    <li className="task"> 
         <span
-        style={{
-            textDecoration: completed? 'line-through': 'none'
-        }}
+        className = {`${completed? 'done' : 'none'}`}
         onClick={onToggle}
         >
         {name}
